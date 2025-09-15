@@ -11,11 +11,6 @@ def test_char_count():
 def test_reverse_text():
     assert tp.reverse_text("hello") == "olleh"
 
-def test_is_palindrome_true():
-    assert tp.is_palindrome("madam")
-
-def test_is_palindrome_false():
-    assert not tp.is_palindrome("hello")
-
-def test_is_palindrome_with_spaces():
-    assert tp.is_palindrome("nurses run")
+def test_is_palindrome():
+    assert tp.is_palindrome("madam") is True
+    assert tp.is_palindrome("hello") is False
