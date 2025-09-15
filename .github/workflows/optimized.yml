@@ -21,7 +21,7 @@ jobs:
 
       - name: Run calculator tests
         run: |
-          pytest tests/test_calculator.py
+          PYTHONPATH=. pytest tests/test_calculator.py
 
   textprocessor-tests:
     runs-on: ubuntu-latest
@@ -40,4 +40,4 @@ jobs:
 
       - name: Run textprocessor tests
         run: |
-          pytest tests/test_textprocessor.py
+          PYTHONPATH=. pytest tests/test_textprocessor.py
